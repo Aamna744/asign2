@@ -2,12 +2,14 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
-    $password = htmlspecialchars($_POST['password']); // In a real application, never display passwords
+    $password = htmlspecialchars($_POST['password']);
 
-    echo "<h2>Registration Successful!</h2>";
+    // Here you can add code to save data to a database
+
+    echo "<h3>Submitted Data:</h3>";
+ ```php
     echo "<p><strong>Name:</strong> $name</p>";
     echo "<p><strong>Email:</strong> $email</p>";
-    // Password should not be displayed in a real application
+    echo "<p><strong>Password:</strong> $password</p>";
 }
-?> 
-$passwordHash = password_hash($password, PASSWORD_DEFAULT);
+?>
