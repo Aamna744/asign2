@@ -3,32 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylish Registration Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>Join Us</h1>
+        <h2>Registration Form</h2>
         <form id="registrationForm">
-            <div class="input-group">
+            <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
             </div>
-            <div class="input-group">
+            <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="youremail@email.com" required>
             </div>
-            <div class="input-group">
+            <div class="form-group">
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
             </div>
-            <button type="submit">Register</button>
+            <button type="submit">Submit</button>
         </form>
         <div id="result" class="result"></div>
     </div>
-
     <script src="script.js"></script>
-    <div id="loader" class="loader" style="display:none;"></div>
 </body>
 </html>
